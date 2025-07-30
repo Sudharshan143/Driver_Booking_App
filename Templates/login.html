@@ -1,1 +1,50 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Driver Booking App</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #aaa;
+            width: 300px;
+        }
+        .login-box h2 {
+            text-align: center;
+        }
+        .login-box input, .login-box button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .login-box button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .login-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form class="login-box" method="POST">
+        <h2>Login</h2>
+        <input type="text" name="identifier" placeholder="Mobile or Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
